@@ -1,4 +1,6 @@
+public class ContohVariabel12{
 
+        public static void main (String [] args){
         String salahSatuHobySayaAdalah = "Bermain petak umpet";
         Boolean isPandai = true;
         char jenisKelamin = 'L';
@@ -9,4 +11,5 @@
         System.out.println("Jenis kelamin:" + jenisKelamin);
         System.out.println("Umurku saat ini:" + umurSayaSekarang);
         System.out.println(String.format("Saya ber ipk %s, dengan tinggi badan %s", $ipk, tinggi));
-    
+   }
+}
