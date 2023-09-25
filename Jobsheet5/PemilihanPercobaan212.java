@@ -18,4 +18,4 @@ public class PemilihanPercobaan212 {
 
         System.out.println("Nilai akhir "+total+" sehingga "+message);
     }
-}
+} 
