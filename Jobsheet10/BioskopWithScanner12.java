@@ -34,6 +34,7 @@ public class BioskopWithScanner12 {
                             System.out.println("Maaf baris yang anda pilih tidak tersedia");
                         }
                     } while (baris>4);
+                    
                     do {
                         System.out.print("Masukkan kolom: ");
                         kolom=sc.nextInt();
