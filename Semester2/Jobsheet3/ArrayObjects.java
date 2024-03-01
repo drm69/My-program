@@ -6,9 +6,12 @@ public class ArrayObjects {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Masukkan jumlah persegi panjang: ");
+        int jml = sc.nextInt();
         PersegiPanjang[] ppArray = new PersegiPanjang[3];
         
-        for (int i = 0; i < ppArray.length; i++) {
+        Object[] bangun = new Object[jml];
+        for (int i = 0; i < bangun.length; i++) {
             ppArray[i] = new PersegiPanjang();
             System.out.println("Persegi panjang ke-" +i);
             System.out.print("Masukkan panjang: ");

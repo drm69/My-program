@@ -4,15 +4,16 @@ public class kerucut {
     public double rKerucut;
     public double sisiMiring;
 
-    public kerucut(double r, double s) {
-        rKerucut = r;
-        sisiMiring = s;
-    }
     public double LuasPermukaanKerucut() {
         return (3.14*rKerucut)*(sisiMiring+rKerucut);
     }
 
     public double VolumeKerucut() {
-        return ((1/3)*3.14*rKerucut*rKerucut)*(Math.sqrt((sisiMiring*sisiMiring)-((1/2)*rKerucut*rKerucut)));
+        double luasp, kuadrat1, kuadrat2, t;
+        luasp = (0.33)*3.14*rKerucut*rKerucut;
+        kuadrat1 = sisiMiring*sisiMiring;
+        kuadrat2 = rKerucut*rKerucut;
+        t = Math.sqrt(kuadrat1-kuadrat2);
+        return luasp*t;
     }
 }
