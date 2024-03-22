@@ -24,36 +24,7 @@ public class main {
         for (int i = 0; i < dataMahasiswa.length; i++) {
             dataMahasiswa[i].tampilInformasi(i);
         }
-
-        double rata2ipk = rataipk(dataMahasiswa);
-        System.out.println("Rata rata ipk Mahasiswa: " +rata2ipk);
-        Tertinggi(dataMahasiswa);
-    }
-
-    static double rataipk(Mahasiswa[] dataMahasiswa) {
-        double total = 0;
-        for (int i = 0; i < 3; i++) {
-            total += dataMahasiswa[i].ipk;
-        }
-        return total/3;
-    }
-
-    static void Tertinggi(Mahasiswa[] dataMahasiswa) {
-        double tertinggi = 0;
-        
-        for (int i = 0; i < dataMahasiswa.length; i++) {
-            if (dataMahasiswa[i].ipk > tertinggi) {
-                tertinggi = dataMahasiswa[i].ipk;
-            }
-        }
-
-        for (int i = 0; i < dataMahasiswa.length; i++) {
-            if (dataMahasiswa[i].ipk == tertinggi) {
-                System.out.println();
-                System.out.println("Berikut data Mahasiswa dengan nilai IPK tertinggi:");
-                dataMahasiswa[i].tampilInformasi(i);
-                break;
-            }
-        }
+        dataMahasiswa[0].rataipk(dataMahasiswa);
+        dataMahasiswa[0].Tertinggi(dataMahasiswa);
     }
 }
